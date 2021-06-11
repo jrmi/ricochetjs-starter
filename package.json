@@ -1,7 +1,7 @@
 {
-  "name": "ricochetjs-template",
+  "name": "ricochetjs-starter",
   "version": "0.1.0",
-  "description": "Ricochet-js backend template.",
+  "description": "Ricochet-js backend starter",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --config webpack.watch.js",
