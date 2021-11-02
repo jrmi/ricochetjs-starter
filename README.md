@@ -2,7 +2,7 @@
 
 This is a starter to be able to create the ricochet initialisation file.
 
-See [Ricochet-js](https://github.com/jrmi/ricochetjs) documentation for more
+See [Ricochet.js](https://github.com/jrmi/ricochetjs) documentation for more
 information on this repository.
 
 You can use `degit` to make your own copy of this repository:
@@ -19,8 +19,8 @@ First install dependencies:
 npm install
 ```
 
-Create a `.env` file from the `.env.dist` file and customize it by adding your 
-previously generated key with ricochet-js.
+Create a `.env` file from the `.env.dist` file and customize it by adding your
+previously generated key with Ricochet.js.
 
 then you can build the package by executing:
 

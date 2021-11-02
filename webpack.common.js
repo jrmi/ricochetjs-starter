@@ -2,7 +2,7 @@ const path = require('path');
 require('dotenv').config({
   path: path.join(__dirname, '.env'),
 });
-const EncryptPlugin = require('ricochet-js').EncryptPlugin;
+const EncryptPlugin = require('ricochetjs').EncryptPlugin;
 const Dotenv = require('dotenv-webpack');
 
 const SECRET_KEY = process.env.RICOCHET_SECRET_KEY;
