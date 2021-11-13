@@ -44,30 +44,7 @@ or even serve the build and watch for code changes:
 npm run serve
 ```
 
-## Customization
-
-You can freely modify `src/index.js` file to declare your store, hooks, 
-custom functions, ...
-
-Remind that the build will be encrypted and should be used by ricochet server 
-with corresponding configuration in `site.json` file.
-
-Example of `site.json` file:
-
-```js
-{
-  "siteId": {
-    "name": "My example website",
-    "key": "<generated key>",
-    "emailFrom": "\"My test\" <no-reply@example.net>"
-  }
-}
-```
-
-Remember to also define a `SECRET` environment variable for the server
-(Can be defined in same `.env` file if you start the server from here).
-
-The server should be listening on `http://localhost:4000`.
+Now, you can call the API declared in your `setup.js` file.
 
 ## Test it with curl
 
@@ -77,3 +54,13 @@ To test test the script, the ricochet server should be started, you can use `cur
 curl -X POST -H "Content-Type: application/json
 X-Ricochet-Origin: http://localhost:9000" -d '{"some":"data"}' http://localhost:4000/siteId/store/publicData/
 ```
+
+## Customization
+
+You can freely modify `src/index.js` file to declare your store, hooks,
+custom functions, ...
+
+Remind that the build will be encrypted and must be used with the ricochet server
+that issued the key.
+
+Read the [Ricochet.js documentation](https://github.com/jrmi/ricochetjs) for more information.
