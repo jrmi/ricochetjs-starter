@@ -5,10 +5,10 @@ require('dotenv').config({
 const EncryptPlugin = require('ricochetjs').EncryptPlugin;
 const Dotenv = require('dotenv-webpack');
 
-const SECRET_KEY = process.env.RICOCHET_SECRET_KEY;
+const SECRET_KEY = process.env.RICOCHET_SITE_KEY;
 
 if (!SECRET_KEY) {
-  console.log('You must define a RICOCHET_SECRET_KEY env variable');
+  console.log('You must define a RICOCHET_SITE_KEY env variable');
   process.exit(-1);
 }
 
@@ -26,7 +26,7 @@ module.exports = {
   plugins: [
     new Dotenv(), // Allow to use .env inside code
     new EncryptPlugin({
-      key: process.env.RICOCHET_SECRET_KEY,
+      key: SECRET_KEY,
     }),
   ],
 };
