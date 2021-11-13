@@ -41,7 +41,14 @@ npm run watch
 or even serve the build and watch for code changes:
 
 ```sh
-npm run serve
+npm run dev
+```
+
+If you want your backend be accessible by an external Ricochet.js instance, you
+also can start a tunnel provided by [localtunnel](https://github.com/localtunnel/localtunnel).
+
+```sh
+npm run tunnel # Define a $TUNNEL_PREFIX env var to set fixed tunnel URL.
 ```
 
 Now, you can call the API declared in your `setup.js` file.
