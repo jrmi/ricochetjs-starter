@@ -51,7 +51,7 @@ also can start a tunnel provided by [localtunnel](https://github.com/localtunnel
 npm run tunnel # Define a $TUNNEL_PREFIX env var to set fixed tunnel URL.
 ```
 
-Now, you can call the API declared in your `setup.js` file.
+Now, you can call the API declared in your `src/index.js` file.
 
 ## Test it with curl
 

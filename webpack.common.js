@@ -18,7 +18,7 @@ module.exports = {
   devtool: false,
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'setup.js',
+    filename: 'ricochet.json',
     library: {
       type: 'commonjs',
     },
