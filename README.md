@@ -58,8 +58,9 @@ Now, you can call the API declared in your `src/index.js` file.
 To test test the script, the ricochet server should be started, you can use `curl`:
 
 ```sh
-curl -X POST -H "Content-Type: application/json
-X-Ricochet-Origin: http://localhost:9000" -d '{"some":"data"}' http://localhost:4000/siteId/store/publicData/
+curl -X POST -H "Content-Type: application/json" \
+-H "X-Ricochet-Origin: http://localhost:9000" \
+-d '{"some":"data"}' http://localhost:4000/siteId/store/publicData/
 ```
 
 ## Customization

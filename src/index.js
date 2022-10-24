@@ -1,4 +1,4 @@
-import { ownerOrNewHooks } from './hooks';
+import { ownerOrNewHooks } from './hooks.js';
 
 export const main = async ({ store, schedules, hooks, functions }) => {
   // Declare stores
